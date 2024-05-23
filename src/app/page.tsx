@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <ul>
       <li>
-        <Link href="client-invoke">useState</Link>
+        <Link href="use-state">useState</Link>
       </li>
       <li>
         <Link href="action-state">useActionState</Link>

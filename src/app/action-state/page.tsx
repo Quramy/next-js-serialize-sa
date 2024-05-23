@@ -15,12 +15,8 @@ export default function Page() {
       <form>
         Count: {count}
         <nav>
-          <button type="submit" formAction={increment}>
-            Increment
-          </button>
-          <button type="submit" formAction={decrement}>
-            Decrement
-          </button>
+          <button formAction={increment}>Increment</button>
+          <button formAction={decrement}>Decrement</button>
         </nav>
       </form>
     </>

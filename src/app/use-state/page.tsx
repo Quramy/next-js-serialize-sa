@@ -8,26 +8,18 @@ export default function Page() {
 
   return (
     <>
-      <h1>useState and client invocation</h1>
-      <div>
+      <h1>useState</h1>
+      <form>
         Count: {count}
         <nav>
-          <button
-            onClick={() =>
-              startTransition(() => increment(count).then(updateCount))
-            }
-          >
+          <button formAction={() => increment(count).then(updateCount)}>
             Increment
           </button>
-          <button
-            onClick={() =>
-              startTransition(() => decrement(count).then(updateCount))
-            }
-          >
+          <button formAction={() => decrement(count).then(updateCount)}>
             Decrement
           </button>
         </nav>
-      </div>
+      </form>
     </>
   );
 }
