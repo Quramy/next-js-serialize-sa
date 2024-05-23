@@ -1,7 +1,7 @@
 "use client";
 
-import { useOptimistic, useActionState } from "react";
-import { reduce, type Action } from "./actions";
+import { useActionState } from "react";
+import { reduce } from "./actions";
 
 export default function Page() {
   const [count, dispatch] = useActionState(reduce, 0);
